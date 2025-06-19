@@ -6,7 +6,7 @@ services:
     container_name: portainer-ee
     network_mode: bridge
     ports:
-      - 9800:80
-      - 9443:443
+      - 800:8000
+      - 900:9000
     labels:
       io.portainer.accesscontrol.public: "true"
