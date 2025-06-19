@@ -1,10 +1,12 @@
 name: managment
 
 services:
-  nginx:
-    image: nginx
-    container_name: nginx:latest
+  portainer:
+    image: portainer/portainer-ee:lts
+    container_name: portainer-ee
     network_mode: bridge
     ports:
       - 9800:80
       - 9443:443
+    labels:
+      io.portainer.accesscontrol.public: "true"
