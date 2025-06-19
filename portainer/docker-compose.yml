@@ -1,5 +1,4 @@
-name: managment
-
+#name: managment
 services:
   portainer:
     image: portainer/portainer-ee:lts
