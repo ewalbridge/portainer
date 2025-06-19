@@ -3,7 +3,7 @@ name: managment
 services:
   nginx:
     image: nginx
-    container_name: nginx
+    container_name: nginx:latest
     network_mode: bridge
     ports:
       - 9800:80
